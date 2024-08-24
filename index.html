@@ -1,280 +1,685 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Dashboard | Karport</title>
-	<link href="./src/output.css" rel="stylesheet">
-	<link
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | Karport</title>
+    <link href="./src/output.css" rel="stylesheet" />
+    <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-		
-</head>
-<body>
-	<div class="antialiased bg-colorBlack">
-		<aside
-			class="fixed top-0 left-0 z-40 w-64 h-screen pt-14 transition-transform -translate-x-full bg-colorBlack border-r border-gray-200 md:translate-x-0"
-			aria-label="Sidenav"
-			id="drawer-navigation"
-		>
-			<div class="flex items-center justify-center">
-				<img src="src/logo/logo.png" alt="" />
-				<h3 class="font-poppins text-white font-bold text-[28px]">kreatop</h3>
-			</div>
-			<div
-				class="overflow-y-scroll scrollbar-hide px-3 bg-colorBlack mt-10 h-full mb-32"
-			>
-				<ul class="space-y-2">
-					<li>
-						<a
-							href="#"
-							class="flex items-center bg-dafGreen w-full h-[44px] rounded-full px-4"
-						>
-							<img src="src/icons/icon-1.png" alt="" />
-							<span class="ml-3 font-poppins font-semibold text-base"
-								>Overview</span
-							>
-						</a>
-					</li>
-					<li>
-						<a
-							href="#"
-							class="flex items-center w-full h-[44px] mt-4 px-4 gap-3"
-						>
-							<img src="src/icons/icon-2.png" alt="" />
-							<span class="font-poppins font-semibold text-base text-white"
-								>Messages</span
-							>
-							<div
-								class="w-[24px] h-[24px] rounded-full bg-blue flex items-center justify-center"
-							>
-								<span class="font-poppins text-white font-bold text-[10px]"
-									>19</span
-								>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a
-							href="#"
-							class="flex items-center w-full h-[44px] mt-4 px-4 gap-3"
-						>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								fill="none"
-								viewBox="0 0 24 24"
-								stroke-width="2"
-								stroke="white"
-								class="size-6"
-							>
-								<path
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z"
-								/>
-							</svg>
-							<span class="font-poppins font-semibold text-base text-white"
-								>Clients</span
-							>
-						</a>
-					</li>
-					<li>
-						<a
-							href="#"
-							class="flex items-center w-full h-[44px] mt-4 px-4 gap-3"
-						>
-							<img src="src/icons/icon-3.png" alt="" />
+  </head>
+  <body>
+    <div class="antialiased bg-colorBlack">
+      <aside
+        class="fixed top-0 left-0 z-40 w-64 h-screen pt-14 transition-transform -translate-x-full bg-colorBlack border-r border-gray-200 md:translate-x-0"
+        aria-label="Sidenav"
+        id="drawer-navigation"
+      >
+        <div class="flex items-center justify-center">
+          <img src="src/logo/logo.png" alt="" />
+          <h3 class="font-poppins text-white font-bold text-[28px]">kreatop</h3>
+        </div>
+        <div
+          class="overflow-y-scroll scrollbar-hide px-3 bg-colorBlack mt-10 h-full mb-32"
+        >
+          <ul class="space-y-2">
+            <li>
+              <a
+                href="#"
+                class="flex items-center bg-dafGreen w-full h-[44px] rounded-full px-4"
+              >
+                <img src="src/icons/icon-1.png" alt="" />
+                <span class="ml-3 font-poppins font-semibold text-base"
+                  >Overview</span
+                >
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center w-full h-[44px] mt-4 px-4 gap-3"
+              >
+                <img src="src/icons/icon-2.png" alt="" />
+                <span class="font-poppins font-semibold text-base text-white"
+                  >Messages</span
+                >
+                <div
+                  class="w-[24px] h-[24px] rounded-full bg-blue flex items-center justify-center"
+                >
+                  <span class="font-poppins text-white font-bold text-[10px]"
+                    >19</span
+                  >
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center w-full h-[44px] mt-4 px-4 gap-3"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="white"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z"
+                  />
+                </svg>
+                <span class="font-poppins font-semibold text-base text-white"
+                  >Clients</span
+                >
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center w-full h-[44px] mt-4 px-4 gap-3"
+              >
+                <img src="src/icons/icon-3.png" alt="" />
 
-							<span class="font-poppins font-semibold text-base text-white"
-								>Content Planner</span
-							>
-						</a>
-					</li>
-					<li>
-						<a href="#" class="flex items-center w-full h-[44px] mt-4 px-4">
-							<img src="src/icons/icon-4.png" alt="" />
-							<span
-								class="ml-3 font-poppins font-semibold text-base text-white"
-								>Bot Analyticts</span
-							>
-							<div
-								class="w-[40px] h-[23px] rounded-full bg-blue flex items-center justify-center ml-2"
-							>
-								<span class="font-poppins text-white font-bold text-[10px]"
-									>New</span
-								>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a
-							href="#"
-							class="flex items-center w-full h-[44px] mt-4 px-4 gap-3"
-						>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								fill="none"
-								viewBox="0 0 24 24"
-								stroke-width="2"
-								stroke="white"
-								class="size-6"
-							>
-								<path
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"
-								/>
-							</svg>
+                <span class="font-poppins font-semibold text-base text-white"
+                  >Content Planner</span
+                >
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex items-center w-full h-[44px] mt-4 px-4">
+                <img src="src/icons/icon-4.png" alt="" />
+                <span
+                  class="ml-3 font-poppins font-semibold text-base text-white"
+                  >Bot Analyticts</span
+                >
+                <div
+                  class="w-[40px] h-[23px] rounded-full bg-blue flex items-center justify-center ml-2"
+                >
+                  <span class="font-poppins text-white font-bold text-[10px]"
+                    >New</span
+                  >
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center w-full h-[44px] mt-4 px-4 gap-3"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="white"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"
+                  />
+                </svg>
 
-							<span class="font-poppins font-semibold text-base text-white"
-								>Testimonials</span
-							>
-						</a>
-					</li>
-					<div class="h-[1px] w-full bg-[#282828] mt-5"></div>
-					<li>
-						<a
-							href="#"
-							class="flex items-center w-full h-[44px] mt-4 px-4 gap-3"
-						>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								fill="none"
-								viewBox="0 0 24 24"
-								stroke-width="2"
-								stroke="white"
-								class="size-6"
-							>
-								<path
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 0 1 0-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28Z"
-								/>
-								<path
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
-								/>
-							</svg>
+                <span class="font-poppins font-semibold text-base text-white"
+                  >Testimonials</span
+                >
+              </a>
+            </li>
+            <div class="h-[1px] w-full bg-[#282828] mt-5"></div>
+            <li>
+              <a
+                href="#"
+                class="flex items-center w-full h-[44px] mt-4 px-4 gap-3"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="white"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 0 1 0-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28Z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                  />
+                </svg>
 
-							<span class="font-poppins font-semibold text-base text-white"
-								>Settings</span
-							>
-						</a>
-					</li>
+                <span class="font-poppins font-semibold text-base text-white"
+                  >Settings</span
+                >
+              </a>
+            </li>
 
-					<li>
-						<a
-							href="#"
-							class="flex items-center w-full h-[44px] mt-4 px-4 gap-3"
-						>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								fill="none"
-								viewBox="0 0 24 24"
-								stroke-width="2"
-								stroke="white"
-								class="size-6"
-							>
-								<path
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15m-3 0-3-3m0 0 3-3m-3 3H15"
-								/>
-							</svg>
-							<span class="font-poppins font-semibold text-base text-white"
-								>Logout</span
-							>
-						</a>
-					</li>
-				</ul>
-				<div
-					class="w-full h-[235px] border-2 border-[#282828] mb-32 mt-4 rounded-3xl p-5"
-				>
-					<div
-						class="w-[60px] h-[60px] rounded-full bg-dafGreen flex items-center"
-					>
-						<img src="src/icons/icon-5.png" class="mx-auto" alt="" />
-					</div>
-					<h3 class="font-poppins font-bold text-[18px] text-white mt-5">
-						Kreto AI Ready to Help You Grow
-					</h3>
-					<button
-						class="bg-dafGreen w-full h-[41px] rounded-full mt-5 text-[#0C0C0C] font-poppins font-bold text-[14px]"
-					>
-						Upgrade Now
-					</button>
-				</div>
-			</div>
-		</aside>
-		<main class="p-4 md:ml-64 h-full pt-20 ">
-			<div class="bg-colorBlack w-full h-[77px] px-5">
-				<div class="flex">
-					<div class="flex flex-col">
-						<h1 class="font-poppins font-bold text-white text-[32px]">
-							Overview
-						</h1>
-						<p class="font-poppins text-[#676767] font-normal text-[18px]">
-							Growt reporting of you account
-						</p>
-					</div>
-					<div class="ml-auto flex items-center gap-5">
-						<button
-							class="h-[50px] w-[50px] rounded-full border-2 border-[#282828] flex items-center"
-						>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								fill="none"
-								viewBox="0 0 24 24"
-								stroke-width="1.5"
-								stroke="white"
-								class="size-6 mx-auto"
-							>
-								<path
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
-								/>
-							</svg>
-						</button>
-						<button
-							class="h-[50px] w-[50px] rounded-full border-2 border-[#282828] flex items-center"
-						>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								fill="none"
-								viewBox="0 0 24 24"
-								stroke-width="1.5"
-								stroke="white"
-								class="size-6 mx-auto"
-							>
-								<path
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0"
-								/>
-							</svg>
-						</button>
-						<div class="w-[2px] h-full bg-[#282828]"></div>
-						<div class="flex items-center gap-3">
-							<div class="flex flex-col">
-								<h3 class="font-poppins font-semibold text-base text-white">
-									Shayna
-								</h3>
-								<p
-									class="font-poppins font-normal text-[14px] text-[#676767]"
-								>
-									Beauty Reviewer
-								</p>
-							</div>
-							<img src="src/icons/icon-6.png" alt="" />
-						</div>
-					</div>
-				</div>
-			</div>
-			</main>
-	</div>
+            <li>
+              <a
+                href="#"
+                class="flex items-center w-full h-[44px] mt-4 px-4 gap-3"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="white"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15m-3 0-3-3m0 0 3-3m-3 3H15"
+                  />
+                </svg>
+                <span class="font-poppins font-semibold text-base text-white"
+                  >Logout</span
+                >
+              </a>
+            </li>
+          </ul>
+          <div
+            class="w-full h-[235px] border-2 border-[#282828] mb-32 mt-4 rounded-3xl p-5"
+          >
+            <div
+              class="w-[60px] h-[60px] rounded-full bg-dafGreen flex items-center"
+            >
+              <img src="src/icons/icon-5.png" class="mx-auto" alt="" />
+            </div>
+            <h3 class="font-poppins font-bold text-[18px] text-white mt-5">
+              Kreto AI Ready to Help You Grow
+            </h3>
+            <button
+              class="bg-dafGreen w-full h-[41px] rounded-full mt-5 text-[#0C0C0C] font-poppins font-bold text-[14px]"
+            >
+              Upgrade Now
+            </button>
+          </div>
+        </div>
+      </aside>
+      <main class="p-4 md:ml-64 h-full pt-20">
+        <div class="bg-colorBlack w-full h-[77px] px-5">
+          <div class="flex">
+            <div class="flex flex-col">
+              <h1 class="font-poppins font-bold text-white text-[32px]">
+                Overview
+              </h1>
+              <p class="font-poppins text-[#676767] font-normal text-[18px]">
+                Growt reporting of you account
+              </p>
+            </div>
+            <div class="ml-auto flex items-center gap-5">
+              <button
+                class="h-[50px] w-[50px] rounded-full border-2 border-[#282828] flex items-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="white"
+                  class="size-6 mx-auto"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                  />
+                </svg>
+              </button>
+              <button
+                class="h-[50px] w-[50px] rounded-full border-2 border-[#282828] flex items-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="white"
+                  class="size-6 mx-auto"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0"
+                  />
+                </svg>
+              </button>
+              <div class="w-[2px] h-full bg-[#282828]"></div>
+              <div class="flex items-center gap-3">
+                <div class="flex flex-col">
+                  <h3 class="font-poppins font-semibold text-base text-white">
+                    Shayna
+                  </h3>
+                  <p
+                    class="font-poppins font-normal text-[14px] text-[#676767]"
+                  >
+                    Beauty Reviewer
+                  </p>
+                </div>
+                <img src="src/icons/icon-6.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+				<div class="w-full flex gap-10 mt-10 pl-5 ">
+          <div class="w-[730px] h-full">
+            <div class="flex items-center">
+              <h2 class="font-poppins font-bold text-[18px] text-white">
+                Latest Statistic
+              </h2>
+              <div class="ml-auto">
+                <select
+                  name="#"
+                  id="#"
+                  class="bg-colorBlack border-2 w-[170px] h-[45px] border-[#282828] px-2 font-poppins font-semibold text-[14px] rounded-xl text-white"
+                >
+                  <option>Last Days 14</option>
+                </select>
+              </div>
+            </div>
+            <div class="grid grid-cols-3 gap-4 mt-5">
+              <div
+                class="border-2 border-[#282828] w-[230px] h-[148px] rounded-xl p-3"
+              >
+                <div class="flex items-center gap-3">
+                  <div
+                    class="h-[50px] w-[50px] rounded-full bg-[#732ECB] flex items-center justify-center"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="white"
+                      class="size-6 mx-auto"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15.91 11.672a.375.375 0 0 1 0 .656l-5.603 3.113a.375.375 0 0 1-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112Z"
+                      />
+                    </svg>
+                  </div>
+                  <h3 class="font-poppins font-bold text-white text-[18px]">
+                    Reach
+                  </h3>
+                </div>
+                <div class="flex items-center mt-5">
+                  <h1 class="font-poppins font-bold text-white text-[28px]">
+                    299,039
+                  </h1>
+                  <div
+                    class="w-[49px] h-[29px] bg-[#FFEAEC] rounded-xl flex items-center justify-center ml-auto"
+                  >
+                    <span
+                      class="font-poppins font-bold text-[14px] text-[#FF001F]"
+                      >-10%</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="border-2 border-[#282828] w-[230px] h-[148px] rounded-xl p-3"
+              >
+                <div class="flex items-center gap-3">
+                  <div
+                    class="h-[50px] w-[50px] rounded-full bg-[#732ECB] flex items-center justify-center"
+                  >
+                    <img src="src/icons/icon-7.png" alt="" />
+                  </div>
+                  <h3 class="font-poppins font-bold text-white text-[18px]">
+                    Share
+                  </h3>
+                </div>
+                <div class="flex items-center mt-5">
+                  <h1 class="font-poppins font-bold text-white text-[28px]">
+                    89,773
+                  </h1>
+                  <div
+                    class="w-[49px] h-[29px] bg-[#FFEAEC] rounded-xl flex items-center justify-center ml-auto"
+                  >
+                    <span
+                      class="font-poppins font-bold text-[14px] text-[#FF001F]"
+                      >-4%</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="border-2 border-[#282828] w-[230px] h-[148px] rounded-xl p-3"
+              >
+                <div class="flex items-center gap-3">
+                  <div
+                    class="h-[50px] w-[50px] rounded-full bg-[#CB372E] flex items-center justify-center"
+                  >
+                    <img src="src/icons/icon-2.png" alt="" />
+                  </div>
+                  <h3 class="font-poppins font-bold text-white text-[18px]">
+                    Inbox
+                  </h3>
+                </div>
+                <div class="flex items-center mt-5">
+                  <h1 class="font-poppins font-bold text-white text-[28px]">
+                    18,221
+                  </h1>
+                  <div
+                    class="w-[49px] h-[29px] bg-[#BFFFBE] rounded-xl flex items-center justify-center ml-auto"
+                  >
+                    <span
+                      class="font-poppins font-bold text-[14px] text-[#03A900]"
+                      >+11%</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="border-2 border-[#282828] w-[230px] h-[148px] rounded-xl p-3"
+              >
+                <div class="flex items-center gap-3">
+                  <div
+                    class="h-[50px] w-[50px] rounded-full bg-[#2ECB89] flex items-center justify-center"
+                  >
+                    <img src="src/icons/icon-8.png" alt="" />
+                  </div>
+                  <h3 class="font-poppins font-bold text-white text-[18px]">
+                    Revenue
+                  </h3>
+                </div>
+                <div class="flex items-center mt-5">
+                  <h1 class="font-poppins font-bold text-white text-[28px]">
+                    $69,000
+                  </h1>
+                  <div
+                    class="w-[49px] h-[29px] bg-[#BFFFBE] rounded-xl flex items-center justify-center ml-auto"
+                  >
+                    <span
+                      class="font-poppins font-bold text-[14px] text-[#03A900]"
+                      >+25%</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="border-2 border-[#282828] w-[230px] h-[148px] rounded-xl p-3"
+              >
+                <div class="flex items-center gap-3">
+                  <div
+                    class="h-[50px] w-[50px] rounded-full bg-[#C82ECB] flex items-center justify-center"
+                  >
+                    <img src="src/icons/icon-9.png" alt="" />
+                  </div>
+                  <h3 class="font-poppins font-bold text-white text-[18px]">
+                    Invoice
+                  </h3>
+                </div>
+                <div class="flex items-center mt-5">
+                  <h1 class="font-poppins font-bold text-white text-[28px]">
+                    48,882
+                  </h1>
+                  <div
+                    class="w-[49px] h-[29px] bg-[#FFEAEC] rounded-xl flex items-center justify-center ml-auto"
+                  >
+                    <span
+                      class="font-poppins font-bold text-[14px] text-[#FF001F]"
+                      >-8%</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="border-2 border-[#282828] w-[230px] h-[148px] rounded-xl p-3"
+              >
+                <div class="flex items-center gap-3">
+                  <div
+                    class="h-[50px] w-[50px] rounded-full bg-[#2EA5CB] flex items-center justify-center"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="white"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z"
+                      />
+                    </svg>
+                  </div>
+                  <h3 class="font-poppins font-bold text-white text-[18px]">
+                    New Clients
+                  </h3>
+                </div>
+                <div class="flex items-center mt-5">
+                  <h1 class="font-poppins font-bold text-white text-[28px]">
+                    22,089
+                  </h1>
+                  <div
+                    class="w-[49px] h-[29px] bg-[#BFFFBE] rounded-xl flex items-center justify-center ml-auto"
+                  >
+                    <span
+                      class="font-poppins font-bold text-[14px] text-[#03A900]"
+                      >+5%</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center mt-10">
+              <div class="flex flex-col">
+                <h2 class="font-poppins font-bold text-[18px] text-white">
+                  Account Growth
+                </h2>
+                <div class="flex gap-5 items-center mt-3">
+                  <div
+                    class="w-[12px] h-[12px] bg-[#732ECB] rounded-full"
+                  ></div>
+                  <h3 class="font-poppins font-semibold text-[14px] text-white">
+                    Reach
+                  </h3>
+                  <div
+                    class="w-[12px] h-[12px] bg-[#2ECB89] rounded-full"
+                  ></div>
+                  <h3 class="font-poppins font-semibold text-[14px] text-white">
+                    Revenue
+                  </h3>
+                  <div
+                    class="w-[12px] h-[12px] bg-[#2EA5CB] rounded-full"
+                  ></div>
+                  <h3 class="font-poppins font-semibold text-[14px] text-white">
+                    Clients
+                  </h3>
+                </div>
+              </div>
+              <div class="ml-auto">
+                <select
+                  name="#"
+                  id="#"
+                  class="bg-colorBlack border-2 w-[170px] h-[45px] border-[#282828] px-2 font-poppins font-semibold text-[14px] rounded-xl text-white"
+                >
+                  <option>Lifetime</option>
+                </select>
+              </div>
+            </div>
 
-</body>
+            <div
+              class="w-full bg-colorBlack rounded-lg shadow  p-4 md:p-6 my-10"
+            >
+              <div id="column-chart"></div>
+            </div>
+          </div>
+          <div class="w-[440px]  bg-[#282828] mt-[-3rem] p-5">
+            <div class="w-full h-[253px] bg-dafGreen rounded-3xl p-5">
+              <img src="src/icons/icon-10.png" alt="" />
+              <p
+                class="font-poppins font-normal text-[16px] text-[#111111] mt-3"
+              >
+                Balance
+              </p>
+              <h1 class="font-poppins font-bold text-[46px] text-[#0C0C0C]">
+                $22,591,200
+              </h1>
+              <p
+                class="font-poppins font-normal text-[16px] text-[#111111] mt-6"
+              >
+                Shayna Lowi . 08/22
+              </p>
+            </div>
+            <div class="flex flex-col mt-5">
+              <h1 class="font-poppins font-bold text-[18px] text-white">
+                Top Big Clients
+              </h1>
+              <div class="flex items-center mt-5">
+                <div class="flex items-center gap-3">
+                  <img src="src/icons/icon-11.png" alt="" />
+                  <div class="flex flex-col">
+                    <h3 class="font-poppins font-bold text-[16px] text-white">
+                      $853,991
+                    </h3>
+                    <p class="font-poppins font-normal text-[#676767]">
+                      BuildWithAngga, Inc
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="w-[49px] h-[29px] bg-[#BFFFBE] rounded-xl flex items-center justify-center ml-auto"
+                >
+                  <span
+                    class="font-poppins font-bold text-[14px] text-[#03A900]"
+                    >+25%</span
+                  >
+                </div>
+              </div>
+              <hr class="mt-5">
+              <div class="flex items-center mt-5">
+                <div class="flex items-center gap-3">
+                  <img src="src/icons/icon-12.png" alt="" />
+                  <div class="flex flex-col">
+                    <h3 class="font-poppins font-bold text-[16px] text-white">
+                      $245,000
+                    </h3>
+                    <p class="font-poppins font-normal text-[#676767]">
+                      Gelombang LLC
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="w-[49px] h-[29px] bg-[#FFEAEC] rounded-xl flex items-center justify-center ml-auto"
+                >
+                  <span
+                    class="font-poppins font-bold text-[14px] text-[#FF001F]"
+                    >-10%</span
+                  >
+                </div>
+              </div>
+              <hr class="mt-5">
+              <div class="flex items-center mt-5">
+                <div class="flex items-center gap-3">
+                  <img src="src/icons/icon-13.png" alt="" />
+                  <div class="flex flex-col">
+                    <h3 class="font-poppins font-bold text-[16px] text-white">
+                      $77,392
+                    </h3>
+                    <p class="font-poppins font-normal text-[#676767]">
+                      Mekaaary, Inc
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="w-[49px] h-[29px] bg-[#BFFFBE] rounded-xl flex items-center justify-center ml-auto"
+                >
+                  <span
+                    class="font-poppins font-bold text-[14px] text-[#03A900]"
+                    >+85%</span
+                  >
+                </div>
+              </div>
+              <h1 class="font-poppins font-bold text-[18px] mt-5 text-white">
+                Revenue Drivers
+              </h1>
+              <div class="flex gap-3 items-center mt-5">
+                <div
+                  class="w-[46px] h-[46px] bg-[#312ECB] rounded-full flex items-center"
+                >
+                  <img src="src/icons/icon-14.png" class="mx-auto" alt="" />
+                </div>
+               
+                <div class="flex flex-col">
+                  <h3 class="font-poppins font-bold text-[16px] text-white">
+                    Brand Awareness
+                  </h3>
+                  <p class="font-poppins font-normal text-[#676767]">
+                    14,409,220 Million Views
+                  </p>
+                </div>
+              </div>
+              <hr class="mt-5">
+              <div class="flex gap-3 items-center mt-5">
+                <div
+                  class="w-[46px] h-[46px] bg-[#312ECB] rounded-full flex items-center"
+                >
+                  <img src="src/icons/icon-15.png" class="mx-auto" alt="" />
+                </div>
+                <div class="flex flex-col">
+                  <h3 class="font-poppins font-bold text-[16px] text-white">
+                    Software Promotion
+                  </h3>
+                  <p class="font-poppins font-normal text-[#676767]">
+                    39,499 Installed
+                  </p>
+                </div>
+              </div>
+              <hr class="mt-5">
+              <div class="flex gap-3 items-center mt-5">
+                <div
+                  class="w-[46px] h-[46px] bg-[#312ECB] rounded-full flex items-center"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="white"
+                    class="size-6 mx-auto"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+                    />
+                  </svg>
+                </div>
+                <div class="flex flex-col">
+                  <h3 class="font-poppins font-bold text-[16px] text-white">
+                    Users Growth
+                  </h3>
+                  <p class="font-poppins font-normal text-[#676767]">
+                    558,311 Users Signed Up
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>
